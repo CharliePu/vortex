@@ -423,7 +423,7 @@ void launchFDWT53Kernel (int WIN_SX, int WIN_SY, cl_mem in, cl_mem out, int sx, 
     // prepare grid size
 	size_t globalWorkSize[2] = { gx*WIN_SX, gy*1};
     size_t localWorkSize[2]  = { WIN_SX , 1};
-    // printf("\n globalx=%d, globaly=%d, blocksize=%d\n", gx, gy, WIN_SX);
+    printf("\n globalx=%d, globaly=%d, blocksize=%d\n", gx, gy, WIN_SX);
 	
     printf("DEBUG: Setting kernel arguments...\n");
 	errNum  = clSetKernelArg(kl_fdwt53Kernel, 0, sizeof(cl_mem), &in);

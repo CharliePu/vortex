@@ -5,7 +5,7 @@ PROJECT := cfd
 
 SRC_DIR := $(VORTEX_HOME)/tests/opencl/$(PROJECT)
 
-SRCS := $(SRC_DIR)/euler3d.cpp $(SRC_DIR)/CLHelper.h
+SRCS := $(SRC_DIR)/euler3d.cpp
 
 Kernels.cl: $(SRC_DIR)/Kernels.cl
 	cp $< $@
